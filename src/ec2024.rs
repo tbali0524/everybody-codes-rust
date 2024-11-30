@@ -1,7 +1,7 @@
-//! Solutions for a season 2024
+//! Solutions for season 2024
 
 pub mod ec2024q01;
-// pub mod ec2024q02;
+pub mod ec2024q02;
 // pub mod ec2024q03;
 // pub mod ec2024q04;
 // pub mod ec2024q05;
@@ -24,7 +24,7 @@ pub mod ec2024q01;
 /// array of implemented solutions for the season
 pub const PUZZLES: crate::ec::Season = [
     Some((ec2024q01::metadata, ec2024q01::solve)),
-    None, // Some((ec2024q02::metadata, ec2024q02::solve)),
+    Some((ec2024q02::metadata, ec2024q02::solve)),
     None, // Some((ec2024q03::metadata, ec2024q03::solve)),
     None, // Some((ec2024q04::metadata, ec2024q04::solve)),
     None, // Some((ec2024q05::metadata, ec2024q05::solve)),

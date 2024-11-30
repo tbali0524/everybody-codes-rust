@@ -1,7 +1,8 @@
 # Everybody Codes solutions in Rust by TBali
 
-![rust v1.82](https://shields.io/badge/rust-1.82-blue?logo=rust)
+![rust v1.83](https://shields.io/badge/rust-1.83-blue?logo=rust)
 ![build](https://img.shields.io/github/actions/workflow/status/tbali0524/everybody-codes-rust/qa.yml)
+![progress](https://img.shields.io/badge/progress%20⭐-6-yellow)
 ![license](https://img.shields.io/github/license/tbali0524/everybody-codes-rust)
 
 * [EC website](https://everybody.codes/)
@@ -51,13 +52,13 @@ cargo clean
 
 ## Adding a new solution
 
-* add puzzle input in `input/year/ecYYYYqDD.txt` and example inputs in `...exX.txt`
+* add puzzle input in `input/year/ecYYYYqDDpP.txt` and example inputs in `...exX.txt` (separate files for each parts)
 * add and edit source in `src/year/ecYYYYqDD.rs`, using the template in `src/ecYYYYqDD.rs`
     * update `pub fn metadata()`, write `solve()`, add unit tests as needed
 * edit `src/ecYYYY.rs`:
-    * uncomment the `pub mod ecYYYYdayDD;` line
+    * uncomment the `pub mod ecYYYYqDD;` line
     * update the `PUZZLES` list: replace `None` with `Some(...)`
 * for a completely new season:
     * edit `src/lib.rs`: add a `pub mod ecYYYY;` line
-    * edit `src/aoc.rs`: increase `MAX_SEASONS` and add a `Some(...)` item to `PUZZLES`
+    * edit `src/ec.rs`: increase `MAX_SEASONS` and add a `Some(...)` item to `PUZZLES`
     * add and update `src/ecYYYY.rs` using the template in `src/ecYYYY.rs`

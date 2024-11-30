@@ -308,20 +308,24 @@ pub mod tests {
     /// Similar to [`run_case()`] but using assertions and no output.
     pub fn test_case(metadata: MetaData, solve: Solver, case: usize) {
         let puzzle = metadata();
-        for part in 1..=3 {
-            let input_s = read_input(&puzzle, case, part).unwrap();
+        let expected = get_expected(&puzzle, case);
+        let input_s = read_input(&puzzle, case, 1).unwrap();
+        let input = input_s.lines().collect::<Vec<&str>>();
+        let ans = solve(&input, 1).unwrap();
+        if !expected.0.is_empty() && expected.0 != "0" {
+            assert_eq!(&ans, expected.0);
+        }
+        if !expected.1.is_empty() && expected.1 != "0" {
+            let input_s = read_input(&puzzle, case, 2).unwrap();
             let input = input_s.lines().collect::<Vec<&str>>();
-            let ans = solve(&input, part).unwrap();
-            let expected = get_expected(&puzzle, case);
-            if part == 1 && !expected.0.is_empty() && expected.0 != "0" {
-                assert_eq!(&ans, expected.0);
-            }
-            if part == 2 && !expected.1.is_empty() && expected.1 != "0" {
-                assert_eq!(&ans, expected.1);
-            }
-            if part == 3 && !expected.2.is_empty() && expected.2 != "0" {
-                assert_eq!(&ans, expected.2);
-            }
+            let ans = solve(&input, 2).unwrap();
+            assert_eq!(&ans, expected.1);
+        }
+        if !expected.2.is_empty() && expected.2 != "0" {
+            let input_s = read_input(&puzzle, case, 3).unwrap();
+            let input = input_s.lines().collect::<Vec<&str>>();
+            let ans = solve(&input, 3).unwrap();
+            assert_eq!(&ans, expected.2);
         }
     }
 

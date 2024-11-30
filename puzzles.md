@@ -4,8 +4,8 @@
 
 |Year         |Status|
 |-------------|:-----|
-|[2024](#2024)|![-](https://img.shields.io/badge/stars%20⭐-3-yellow)|
-|__Total__|![total](https://img.shields.io/badge/stars%20⭐-3-yellow)|
+|[2024](#2024)|![-](https://img.shields.io/badge/stars%20⭐-6-yellow)|
+|__Total__|![total](https://img.shields.io/badge/stars%20⭐-6-yellow)|
 
 ## Puzzles
 
@@ -14,8 +14,8 @@
 |Done?|Year|Day| Title                                    | Topics   |
 |:---:|----|--:|:-----------------------------------------|:---------|
 |  +  |2024|  1|The Battle for the Farmlands              | |
-|  -  |2024|  2|                                          | |
-|  -  |2024|  3|                                          | |
+|  +  |2024|  2|The Runes of Power                        | |
+|  -  |2024|  3|Mining Maestro                            | |
 |  -  |2024|  4|                                          | |
 |  -  |2024|  5|                                          | |
 |  -  |2024|  6|                                          | |

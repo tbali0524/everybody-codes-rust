@@ -13,7 +13,7 @@ pub fn metadata() -> PuzzleMetaData<'static> {
 }
 
 pub fn solve(input: PuzzleInput, part: usize) -> PuzzleResult {
-    // ---------- Parse and Check input
+    // ---------- Check input
     if input.len() != 1 {
         Err("input must have a single line")?;
     }

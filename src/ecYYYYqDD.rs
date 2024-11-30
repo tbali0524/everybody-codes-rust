@@ -19,11 +19,28 @@ pub fn solve(input: PuzzleInput) -> PuzzleResult {
     if input.len() != 1 {
         Err("input must have a single line")?;
     }
-    // ---------- Part 1
-    let mut ans1 = 0;
-    // ---------- Part 2
-    let mut ans2 = 0;
-    Ok((ans1.to_string(), ans2.to_string()))
+    // ---------- Part 1+2+3
+    match part {
+        1 => solve_part1(input),
+        2 => solve_part2(input),
+        3 => solve_part3(input),
+        _ => Err("invalid part")?,
+    }
+}
+
+fn solve_part1(input: PuzzleInput) -> PuzzleResult {
+    let ans = 0;
+    Ok(ans.to_string())
+}
+
+fn solve_part2(input: PuzzleInput) -> PuzzleResult {
+    let ans = 0;
+    Ok(ans.to_string())
+}
+
+fn solve_part3(input: PuzzleInput) -> PuzzleResult {
+    let ans = 0;
+    Ok(ans.to_string())
 }
 
 // ------------------------------------------------------------
