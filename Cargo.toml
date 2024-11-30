@@ -1,6 +1,26 @@
+# Cargo manifest file for Rust 🦀 solutions.
+# @see https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [package]
 name = "everybody-codes-rust"
 version = "0.1.0"
+authors = ["Balint Toth"]
 edition = "2021"
+rust-version = "1.82"
+description = "Everybody Codes puzzle solutions in Rust by TBali"
+homepage = "https://everybody.codes/"
+repository = "https://github.com/tbali0524/everybody-codes-rust"
+license = "MIT"
+keywords = ["everybody-codes", "algorithms"]
+
+[lib]
+path = "src/lib.rs"
+name = "ec"
+
+[[bin]]
+path = "src/main.rs"
+name = "ec"
 
 [dependencies]
+indicatif = {version = "*", features = ["rayon"]} # used by run_puzzles()
+rayon = "1.10"          # used by run_puzzles()
