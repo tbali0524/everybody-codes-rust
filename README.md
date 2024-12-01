@@ -2,7 +2,7 @@
 
 ![rust v1.83](https://shields.io/badge/rust-1.83-blue?logo=rust)
 ![build](https://img.shields.io/github/actions/workflow/status/tbali0524/everybody-codes-rust/qa.yml)
-![progress](https://img.shields.io/badge/progress%20⭐-6-yellow)
+![progress](https://img.shields.io/badge/progress%20⭐-12-yellow)
 ![license](https://img.shields.io/github/license/tbali0524/everybody-codes-rust)
 
 * [EC website](https://everybody.codes/)

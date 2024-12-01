@@ -4,8 +4,8 @@
 
 |Year         |Status                                                       |
 |-------------|:------------------------------------------------------------|
-|[2024](#2024)|![-](https://img.shields.io/badge/stars%20⭐-6-yellow)       |
-|__Total__    |![total](https://img.shields.io/badge/stars%20⭐-6-yellow)   |
+|[2024](#2024)|![-](https://img.shields.io/badge/stars%20⭐-12-yellow)       |
+|__Total__    |![total](https://img.shields.io/badge/stars%20⭐-12-yellow)   |
 
 ## Puzzles
 
@@ -15,10 +15,10 @@
 |:---:|----|--:|:-----------------------------------------|:------------|
 |  +  |2024|  1|The Battle for the Farmlands              |             |
 |  +  |2024|  2|The Runes of Power                        |             |
-|  -  |2024|  3|Mining Maestro                            |             |
-|  -  |2024|  4|                                          |             |
-|  -  |2024|  5|                                          |             |
-|  -  |2024|  6|                                          |             |
+|  +  |2024|  3|Mining Maestro                            |             |
+|  +  |2024|  4|Royal Smith's Puzzle                      |             |
+|  -  |2024|  5|Pseudo-Random Clap Dance                  |             |
+|  -  |2024|  6|The Tree of Titans                        |             |
 |  -  |2024|  7|                                          |             |
 |  -  |2024|  8|                                          |             |
 |  -  |2024|  9|                                          |             |

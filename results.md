@@ -14,7 +14,7 @@ Everybody Codes - solutions in Rust, (c) 2024 by TBali
 [ OK ] Puzzle     part #2 : 5237
 [ OK ] Puzzle     part #3 : 28225
 
-=== EC 2024 Day  2 ===== [time:    24 ms] : The Runes of Power
+=== EC 2024 Day  2 ===== [time:    23 ms] : The Runes of Power
 [ OK ] Example #1 part #1 : 4
 [ OK ] Example #1 part #2 : 42
 [ OK ] Example #1 part #3 : 10
@@ -22,7 +22,23 @@ Everybody Codes - solutions in Rust, (c) 2024 by TBali
 [ OK ] Puzzle     part #2 : 5236
 [ OK ] Puzzle     part #3 : 11818
 
-=================== [Total time:    25 ms] : [1 season, 2 puzzles, 2 examples]
+=== EC 2024 Day  3 ===== [time:     1 ms] : Mining Maestro
+[ OK ] Example #1 part #1 : 35
+[ OK ] Example #1 part #2 : 35
+[ OK ] Example #1 part #3 : 29
+[ OK ] Puzzle     part #1 : 124
+[ OK ] Puzzle     part #2 : 2617
+[ OK ] Puzzle     part #3 : 10152
+
+=== EC 2024 Day  4 ===== [time:     0 ms] : Royal Smith's Puzzle
+[ OK ] Example #1 part #1 : 10
+[ OK ] Example #1 part #2 : 10
+[ OK ] Example #1 part #3 : 8
+[ OK ] Puzzle     part #1 : 88
+[ OK ] Puzzle     part #2 : 987977
+[ OK ] Puzzle     part #3 : 128994457
+
+=================== [Total time:    26 ms] : [1 season, 4 puzzles, 4 examples]
 
 [ OK ] All tests passed.
 ```
