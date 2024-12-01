@@ -7,7 +7,8 @@
 
 * [EC website](https://everybody.codes/)
 * [Puzzle list](puzzles.md) with topics and my completion status
-* Link to this repo on [GitHub](https://github.com/tbali0524/everybody-codes-rust)
+* [Results and running times](results.md)
+* [This repo on GitHub](https://github.com/tbali0524/everybody-codes-rust)
 
 ## Usage
 
@@ -19,7 +20,8 @@ rustup update stable
 cargo version
 cargo tree
 # -- lint
-cargo verify-project
+cargo audit
+cargo check
 cargo fmt
 cargo clippy
 # -- doc
@@ -39,12 +41,13 @@ cargo build --release
 target/release/ec.exe
 target/release/ec.exe 2024
 target/release/ec.exe 2024 1
-# -- shortcut run
+cargo run --release
+# -- shortcut run (Windows)
 ./ec.bat
 ./ec.bat 2024
 ./ec.bat 2024 1
 ./ec.bat --help
-# -- shortcut qa
+# -- shortcut qa+run (Windows)
 ./qa.bat
 # -- cleanup
 cargo clean
@@ -52,8 +55,9 @@ cargo clean
 
 ## Adding a new solution
 
-* add puzzle input in `input/year/ecYYYYqDDpP.txt` and example inputs in `...exX.txt` (separate files for each parts)
-* add and edit source in `src/year/ecYYYYqDD.rs`, using the template in `src/ecYYYYqDD.rs`
+* for puzzle year `YYYY`, quest `DD`, part `P`:
+* add puzzle input in `input/YYY/ecYYYYqDDpP.txt` and example inputs in `...exX.txt` (separate files for each part)
+* add and edit source in `src/ecYYYY/ecYYYYqDD.rs`, using the template in `src/ecYYYYqDD.rs`
     * update `pub fn metadata()`, write `solve()`, add unit tests as needed
 * edit `src/ecYYYY.rs`:
     * uncomment the `pub mod ecYYYYqDD;` line

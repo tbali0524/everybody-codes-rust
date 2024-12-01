@@ -23,4 +23,4 @@ name = "ec"
 
 [dependencies]
 indicatif = {version = "*", features = ["rayon"]} # used by run_puzzles()
-rayon = "1.10"          # used by run_puzzles()
+rayon = "1.10" # used by run_puzzles()
