@@ -1,8 +1,8 @@
 //! Helper module to run any puzzle solution.
 
 use super::ansi::{ANSI_GREEN, ANSI_RESET, ANSI_YELLOW};
-use super::{PuzzleError, PuzzleExpected, PuzzleMetaData, Solver};
 use super::{PUZZLES, START_SEASON};
+use super::{PuzzleError, PuzzleExpected, PuzzleMetaData, Solver};
 use indicatif::ParallelProgressIterator;
 use rayon::prelude::*;
 use std::fs;

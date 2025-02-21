@@ -1,6 +1,6 @@
 # Everybody Codes solutions in Rust by TBali
 
-![rust v1.83](https://shields.io/badge/rust-1.83-blue?logo=rust)
+![rust v1.85](https://shields.io/badge/rust-1.85-blue?logo=rust)
 ![build](https://img.shields.io/github/actions/workflow/status/tbali0524/everybody-codes-rust/qa.yml)
 ![progress](https://img.shields.io/badge/progress%20⭐-12-yellow)
 ![license](https://img.shields.io/github/license/tbali0524/everybody-codes-rust)
