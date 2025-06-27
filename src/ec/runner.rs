@@ -74,13 +74,10 @@ pub fn run_puzzles(year: Option<usize>, day: Option<usize>, parallel: bool) -> b
         all_passed = all_passed && *passed;
         let season = puzzle_list[idx].0.year;
         if season != prev_season {
-            println!(
-                "======= {} ===================================================",
-                season
-            );
+            println!("======= {season} ===================================================");
         }
         prev_season = season;
-        print!("{}", message);
+        print!("{message}");
     }
     println!(
         "=================== [Total time: {:5} ms] : [{} season{}, {}{}{} puzzle{}, {} example{}]\n",
@@ -100,7 +97,7 @@ pub fn run_puzzles(year: Option<usize>, day: Option<usize>, parallel: bool) -> b
         MSG_FAIL_TOTAL
     };
     if count_puzzles > 0 {
-        println!("{}\n", msg);
+        println!("{msg}\n");
     }
     all_passed
 }
@@ -182,7 +179,7 @@ pub fn run_part(
         } else {
             all_passed = false;
             pre_msg = MSG_FAIL;
-            ans_msg = format!("{ANSI_YELLOW}{}{ANSI_RESET}", ans);
+            ans_msg = format!("{ANSI_YELLOW}{ans}{ANSI_RESET}");
             post_msg = format!(
                 "{}[expected: {}]",
                 " ".repeat(20 - ans.len()),
@@ -198,15 +195,9 @@ pub fn run_part(
         ans_msg = format!("{ANSI_YELLOW}n/a{ANSI_RESET}");
     }
     if case == 0 {
-        all_message += &format!(
-            "{} Puzzle     part #{} : {}{}\n",
-            pre_msg, part, ans_msg, post_msg
-        );
+        all_message += &format!("{pre_msg} Puzzle     part #{part} : {ans_msg}{post_msg}\n");
     } else {
-        all_message += &format!(
-            "{} Example #{} part #{} : {}{}\n",
-            pre_msg, case, part, ans_msg, post_msg
-        );
+        all_message += &format!("{pre_msg} Example #{case} part #{part} : {ans_msg}{post_msg}\n");
     }
     (all_passed, all_message)
 }
@@ -223,9 +214,9 @@ fn get_plural(item: usize) -> String {
 // ------------------------------------------------------------
 fn get_case_error(case: usize, e: PuzzleError) -> String {
     if case == 0 {
-        format!("{MSG_FAIL} Puzzle             : {:?}\n", e)
+        format!("{MSG_FAIL} Puzzle             : {e:?}\n")
     } else {
-        format!("{MSG_FAIL} Example #{}         : {:?}\n", case, e)
+        format!("{MSG_FAIL} Example #{case}         : {e:?}\n")
     }
 }
 
@@ -249,7 +240,7 @@ pub fn read_input(
     part: usize,
 ) -> Result<String, PuzzleError> {
     if case > puzzle.example_solutions.len() {
-        Err(format!("missing expected solution for example #{}", case))?;
+        Err(format!("missing expected solution for example #{case}"))?;
     }
     let input_path = if case == 0 {
         format!(
@@ -263,7 +254,7 @@ pub fn read_input(
         )
     };
     let input = fs::read_to_string(path::Path::new(&input_path))
-        .map_err(|_| format!("cannot read input file: {}", input_path))?;
+        .map_err(|_| format!("cannot read input file: {input_path}"))?;
     if input.is_empty() {
         Err("empty input")?;
     }
@@ -336,15 +327,12 @@ pub mod tests {
 
     /// Similar to `test_invalid()`, but also checks if the error message contains the givent string slice.
     pub fn test_invalid_msg(input: PuzzleInput, solve: Solver, msg: &str) {
-        let result = solve(&input, 1);
+        let result = solve(input, 1);
         assert!(result.is_err());
         if !msg.is_empty() {
             let e = result.unwrap_err().0;
             if !e.contains(msg) {
-                eprintln!(
-                    "*** Error message does not match the expected: {} != {}",
-                    e, msg
-                );
+                eprintln!("*** Error message does not match the expected: {e} != {msg}");
             }
             assert!(e.contains(msg));
         }

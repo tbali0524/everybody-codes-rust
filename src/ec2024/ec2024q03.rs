@@ -98,6 +98,6 @@ mod tests {
 
     #[test]
     fn invalid_char() {
-        test_invalid_msg(&[&"a"], solve, "input must contain only .#");
+        test_invalid_msg(&["a"], solve, "input must contain only .#");
     }
 }

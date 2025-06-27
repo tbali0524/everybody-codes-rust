@@ -127,7 +127,7 @@ mod tests {
     #[test]
     fn invalid_must_have_lines() {
         test_invalid_msg(
-            &[&"WORDS:AA,BB", &""],
+            &["WORDS:AA,BB", ""],
             solve,
             "input must have at least 3 lines",
         );
@@ -136,7 +136,7 @@ mod tests {
     #[test]
     fn invalid_second_line_must_be_empty() {
         test_invalid_msg(
-            &[&"WORDS:AA,BB", &"Z", &"AABB"],
+            &["WORDS:AA,BB", "Z", "AABB"],
             solve,
             "input second line must be empty",
         );
@@ -145,7 +145,7 @@ mod tests {
     #[test]
     fn invalid_first_line_must_start_with_words() {
         test_invalid_msg(
-            &[&"AA,BB", &"", &"AABB"],
+            &["AA,BB", "", "AABB"],
             solve,
             "input first line must start with `WORDS:`",
         );

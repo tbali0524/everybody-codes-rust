@@ -123,11 +123,11 @@ mod tests {
 
     #[test]
     fn invalid_single_line() {
-        test_invalid_msg(&[&"a", &"b"], solve, "input must have a single line");
+        test_invalid_msg(&["a", "b"], solve, "input must have a single line");
     }
 
     #[test]
     fn invalid() {
-        test_invalid_msg(&[&"Z"], solve, "input must contain only ABC");
+        test_invalid_msg(&["Z"], solve, "input must contain only ABC");
     }
 }

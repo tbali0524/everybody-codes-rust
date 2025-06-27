@@ -61,6 +61,6 @@ mod tests {
     #[test]
     #[ignore]
     fn invalid() {
-        test_invalid_msg(&[&"a"], solve, "...");
+        test_invalid_msg(&["a"], solve, "...");
     }
 }
